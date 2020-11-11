@@ -1,0 +1,179 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<!doctype html>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<link href="styles.css" rel="stylesheet" />
+<meta content="width=device-width, initial-scale=1" name="viewport" />
+<title>CookPal</title>
+</head>
+
+<body>
+
+<!--Nav contains collapsible sidebar with hamburger menu, title, and sign out button (if user is signed in)-->
+<nav>
+	<div id="sidebar" class="cSidebar">
+	    <button class="openButton" onclick="openNav()">☰</button>
+		<a href="#">Home</a> 
+		<a href="#">Recipes</a> 
+		<div id="recipeOpt">
+		<a href="#">Add&nbsp;Recipe</a>
+		<a href="#">Favorites</a>
+		<a href="#">Desserts</a>
+		<a href="#">Breakfast</a>
+		<a href="#">Vegan</a>
+		</div>
+		<a href="#">Weekly&nbsp;Plan</a>
+		<a href="#">Grocery&nbsp;List</a>
+		
+	</div>
+	<div id="navbutton">
+		<button class="openButton" onclick="openNav()">☰</button></div>
+	
+        <h2 id="pageTitle1B">CookPal</h2>
+	
+	<div>
+	<button id="navButton">Sign&nbsp;out</button> 
+	</div>
+	
+</nav>
+<main>
+<!--New Recipe Form-->
+<!--To complete this, I sperated the form into 2 divs: box1 (box on top that spans the width of the form) and box 2 (the rest of the form)-->
+<!--Box 1 contains the form title, enter recipe name input, favorite checkbox, category select input, and the submit and cancel buttons-->
+<!--Box 2 contains two divs: box 3 (div to the right) and box 4 (div to the left)-->
+<!--Box 3 contains upload image option, cooking time input, number of serving input, and ingredients input-->
+<!--Box 4 contains Instructions input-->
+
+<form id="newRecipeFormArea">
+
+<!--BOX 1-->
+	<div class="box1"> 
+	
+	<h2 id="formTitle">Recipe Creation Form</h2>
+	
+	<div class="nameArea">
+	<label for="inputRecipeName">Enter Name of Recipe</label><br/>
+	<input type="text" id="inputRecipeName" name="RecipeName" required/>
+	</div>
+	
+	<div class="nameArea">
+	<label for="checkFav"> Favorite</label>
+	<input type="checkbox" id="checkFav" name="favorite" value="Favorite"/>
+	</div>
+	
+	<div class="categoryArea">
+	<label for="inputCategory">Select Category</label><br/>
+	<select id="inputCategory" name="Category" required>
+		<option disabled hidden selected value="" style="display:none"></option>
+		<option value="Meats">Meats</option>
+		<option value="Soups">Soups</option>
+		<option value="Salads">Salads</option>
+		<option value="Pastas">Pastas</option>
+		<option value="Desserts">Desserts</option>
+		<option value="Breakfast">Breakfast</option>
+		<option value="Vegan">Vegan</option>
+	</select>
+	</div>
+	
+	
+	<input class="recipeButton" type="submit"/>
+	<input class="recipeButton"type="button" value="Cancel"/>	
+	
+	
+	</div> 
+<!--END OF BOX 1-->
+
+<!--BOX 2-->
+	<div class="box2">
+
+    <!--BOX 3-->
+	<div class="box3">
+	
+	<div class="bigBox">
+	<div id="sectionUpload">
+	<label for="imageUpload">Upload image:</label>
+    <input type="file" id="imageUpload" name="img" accept="image/*"/>
+    </div>
+   	</div>
+   	
+   	
+	<div class="littleBox">
+	<div id="sectionUpload">
+	<label for="cTime">Cooking Time Required:</label>
+    <input type="text" id="cTime" name="CookingTime" required/>
+  	</div>
+	</div>
+	
+	
+	<div class="littleBox">
+	<div id="sectionUpload">
+	<label for="numServings">Number of Servings:</label>
+    <input type="text" id="numServings" name="servingNumber" required/>
+  	</div>
+    </div>
+    
+    
+	<div class="bigBoxBottom">
+	<div id="sectionUploadBottom">
+	<label for="rIngredients">Ingredients:</label>
+    <textarea id="rIngredients" name="ingredients" rows="5" cols="25" required>
+Eggs,lemon,salt...
+    </textarea>
+    </div>
+	</div>
+
+	</div>
+	<!--END OF BOX 3-->
+	
+	<!--BOX 4-->
+	<div class="box4">
+	<div class="bigBoxRight">
+	<label for="rInstructions">Instructions</label>
+    <textarea id="rInstructions" name="instructions" rows="28" cols="150" required>
+
+    </textarea>
+
+	</div>
+	</div>
+	<!--END OF BOX 4-->
+	
+	</div>
+<!--END OF BOX 2-->
+	
+
+	
+
+
+
+
+</form>
+</main>
+
+
+
+<!--Footer, still unsure what to put in-->
+<footer>
+@CookPal 2020
+</footer>
+
+
+
+
+<!--Script used for sidebar-->
+<script>
+function openNav() {
+var e = document.getElementById("sidebar");
+if (e.style.width == '260px')
+{e.style.width = '0px';}
+else
+{e.style.width='260px';}
+}
+function closeNav()
+{document.getElementById("sidebar").style.width="0";}
+</script>
+
+</body>
+
+</html>
