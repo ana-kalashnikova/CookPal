@@ -1,0 +1,203 @@
+/*General CSS*/
+
+body {
+	background-color:#fff7e6;
+	margin: 0;
+	padding: 0;
+}
+body,html{
+	height: 100%;
+}
+nav {
+	display: flex;
+	height: 90px;
+
+}
+
+/*Css for collapsible sidebar part of the Navigation Bar*/
+.cSidebar {
+	height: 100%;
+	width: 0;
+	left: 0;
+	background-color: #FF9933;
+	position: fixed;
+	overflow-x: hidden;
+	padding-top: 0px;
+	z-index: 1;
+	transition: 0.5s;
+	border-right:thin black ridge;
+
+}
+.cSidebar a {
+	color: white;
+	padding: 8px 8px 8px 30px;
+	margin-bottom:10px;
+	text-decoration: none;
+	font-size: 30px;
+	transition: 0.3s;
+	text-align:left;
+	display: block;
+
+}
+
+.openButton {
+	padding: 22px 35px;
+	color: black;
+	font-size: 30px;
+	border: none;
+	outline: none;
+	transition:0.3s;
+	border-radius:1rem;
+	background-color:transparent;
+
+}
+
+#sidebar a:hover {
+	background-color: #CC6600;
+	cursor: pointer;
+
+}
+.openButton:hover {
+	cursor: pointer;
+	background-color:#CC6600;
+
+}
+
+.openButton:active {
+
+}
+
+/*CSS for Title*/
+#navRest {
+	transition: margin-left 0.5s;
+	width:100%;
+	padding:15px;
+}
+
+#pageTitle {
+	color: black;
+	text-align: center;
+	font-size: 25px;
+}
+
+
+/*Css for sign out button*/
+
+#signOutB{
+    margin:20px 15px;
+    padding:10px 25px;
+    background-color:transparent;
+    border:thin black solid;
+    font-size:15px;
+    cursor: pointer;
+   }
+   
+#signOutB:hover{
+	background-color:#CC6600;
+}
+
+
+/*CSS for sidebar recipe options. Just made them smaller and more indented than the rest of the options on the sidebar */
+#recipeOpt a{
+	font-size:25px;
+	padding:13px 8px 13px 60px;
+}
+
+
+/*CSS for Title with pages that have just a sign out button*/
+#pageTitle1B  {
+	transition: margin-left 0.5s;
+	width:100%;
+	padding:15px;
+	color: black;
+	text-align: center;
+	font-size: 25px;
+	margin-left:7%;
+}
+
+/*CSS for Title with pages that have a sign in and sign up button*/
+/*Had to seperate the two titles in order to have both of them centered at the correct spots*/
+
+#logo{
+	padding: 10px;
+}
+
+#logo img {
+	width: 90px;
+	height: 95px;
+}
+
+#logo a {
+	font-size: 30px;
+	text-decoration: none;
+	color: black;
+	margin-top: 10px;
+}
+
+#logo a p{
+	display: inline-block;
+}
+
+#logo a p:hover{
+	text-decoration: none;
+	color:#FF9933;
+}
+
+/*Css for buttons*/
+#navButton{
+	position: absolute;
+	right: 15px;
+	margin:20px 15px;
+}
+
+#navButton a{
+	 padding:10px 30px;
+	 background-color:transparent;
+	 border:thin black solid;
+	 font-size:15px;
+	 color: black;
+ }
+
+#navButton a:hover{
+	background-color:#CC6600;
+}
+
+
+/*CSS for Contact us*/
+
+#contactUsForm {
+    width:570px;
+    margin:4% auto;
+	padding:6px;
+	background-color:#FF9933;
+	border-radius:1rem;
+	border:thin black ridge;
+}
+
+
+#submitBttn{
+    background-color:transparent;
+    cursor: pointer;
+    border:thin black ridge;
+
+}
+
+#submitBttn:hover {
+	cursor: pointer;
+	background-color:#CC6600;
+}
+
+
+
+
+/*CSS of footer*/
+
+footer{
+	width:100%;
+	height:15px;
+	position:fixed;
+	background-color:#FF9933;
+	font-size:10px;
+	text-align:center;
+	bottom:0;
+}
