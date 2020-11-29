@@ -561,6 +561,84 @@ a:hover{
 
 	
 }
+/*CSS for home page*/
+#homeContainer{
+	display:flex;
+	margin-top:1%;
+	width:100%;
+	background-color:#FFCC66;
+	padding:2% 0 2% 0;
+	height:auto;
+}
+.welcomeDiv{
+	width:43%;
+	text-align:center;
+	margin-left:2%;
+}
+.welcomeDiv h4{
+	font-size:4.2vw;
+	margin:5% 10% 5% 10%;
+
+}
+.welcomeDiv p{
+	font-size:1.4vw;
+	margin:0 15% 0 15%;
+}
+.welcomeDiv button{
+	width:auto;
+	height:12%;
+	padding:0 2% 0 2%;
+	margin:6% 0 0 0;
+	background-color:#FF9933;
+	border:thin black solid;
+	font-size:1.2vw;
+}
+.welcomeDiv button:hover{
+	background-color:#CC6600;
+}
+.videoDiv{
+	width:48%;
+	box-shadow:0 0 20px;
+}
+.videoDiv video{
+	width:100%;
+	height:auto;
+	
+}
+#homeInfo{
+	margin:3% 20% 1% 20%;
+	font-size:1.2vw;
+}
+#homeInfo h1{
+	text-align:center;
+}
+#homeFeatures{
+	margin:3% 15% 5% 15%;
+	text-align:center;
+	font-size:1.2vw;
+
+}
+.featuresContainer{
+	display:flex;
+}
+.featureBox{
+	width:400px;
+	margin-top:3px;
+	margin-left:2%;
+	margin-right:2%;
+	text-align: left;
+}
+.featureBox p{
+	margin:0 15px 15px 0px;
+	color:#666666;
+}
+.homeIcon{
+	vertical-align:text-top;
+}
+.welcomeDiv p, #homeInfo p{
+	color:#333333;
+
+}
 /*CSS of footer*/
 
 footer{
