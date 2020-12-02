@@ -639,6 +639,33 @@ a:hover{
 	color:#333333;
 
 }
+
+/*CheckOut Page*/
+#checkoutForm{
+	margin:1% auto;
+	min-width:500px;
+	width:40%;
+}
+#radioPayment{
+	margin:3% 0 3% 0;
+}
+#checkoutForm button{
+	margin:2% 0 8% 0;
+	background-color:transparent;
+	color:black;
+	border:thin black solid;
+	padding:10px 20px;
+}
+#checkoutForm button:hover{
+	background-color:#FFFF99;
+}
+#checkoutForm h4{
+	margin:2% 0 2% 0;
+}
+#checkoutForm h2{
+	margin:2% 0 4% 0;
+	text-align:center;
+}
 /*CSS of footer*/
 
 footer{

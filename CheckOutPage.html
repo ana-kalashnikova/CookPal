@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<!doctype html>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"/>
+<link href="styles.css" rel="stylesheet" />
+<meta content="width=device-width, initial-scale=1" name="viewport" />
+<title>CookPal</title>
+</head>
+
+<body>
+
+<!--Nav contains collapsible sidebar with hamburger menu, title, and sign out button (if user is signed in)-->
+<nav>
+	<div id="sidebar" class="cSidebar">
+	    <button class="openButton" onclick="openNav()">☰</button>
+		<a href="#">Home</a> 
+		<a href="#">Recipes</a> 
+		<div id="recipeOpt">
+		<a href="#">Add&nbsp;Recipe</a>
+		<a href="#">Favorites</a>
+		<a href="#">Desserts</a>
+		<a href="#">Breakfast</a>
+		<a href="#">Vegan</a>
+		</div>
+		<a href="#">Weekly&nbsp;Plan</a>
+		<a href="#">Grocery&nbsp;List</a>
+		
+	</div>
+	<div id="navbutton">
+		<button class="openButton" onclick="openNav()">☰</button></div>
+	
+        <h2 id="pageTitle1B">CookPal</h2>
+	
+	<div>
+	<button id="navButton">Sign&nbsp;out</button> 
+	</div>
+	
+</nav>
+<main>
+
+
+<!--Check out Form-->
+<form id="checkoutForm">
+  <h2>CookPal Secure Checkout</h2>
+    <hr/>
+
+  <h4>Billing Address</h4>
+  
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputFName">First Name</label>
+      <input type="text" class="form-control" id="inputFName" required/>
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputLName">Last Name</label>
+      <input type="text" class="form-control" id="inputLName" required/>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputEmail">Email</label>
+    <input type="email" class="form-control" id="inputEmail" required/>
+  </div>
+  <div class="form-group">
+    <label for="inputAddress1">Address</label>
+    <input type="text" class="form-control" id="inputAddress1" required/>
+  </div>
+  <div class="form-group">
+    <label for="inputAddress2">Address 2 <span class="text-muted">(Optional)</span></label>
+    <input type="text" class="form-control" id="inputAddress2" />
+  </div>
+  <div class="form-row">
+  	<div class="form-group col-md-4">
+      <label for="inputCountry">Country</label>
+      <input type="text" class="form-control" id="inputCountry" required/>
+    </div>
+    <div class="form-group col-md-3">
+      <label for="inputCity">City</label>
+      <input type="text" class="form-control" id="inputCity" required/>
+    </div>
+    <div class="form-group col-md-3">
+      <label for="inputState">State</label>
+      <input type="text" class="form-control" id="inputState" required/>
+    </div>
+    <div class="form-group col-md-2">
+      <label for="inputZip">Zip</label>
+      <input type="text" class="form-control" id="inputZip" required/>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="inputSave"/>
+      <label class="form-check-label" for="inputSave">
+        Save my information
+      </label>
+    </div>
+  </div>
+  <hr/>
+  
+  <h4>Payment Information</h4>
+  <div id="radioPayment">
+	  <input type="radio" id="inputCC" name="paymentType" value="creditCard" required/>
+	  <label for="inputCC">Credit Card</label><br/>
+	
+	  <input type="radio" id="inputDC" name="paymentType" value="debitCard" required/>
+	  <label for="inputDC">Debit Card</label><br/>
+  </div>
+   
+  <div class="form-row">
+  	<div class="form-group col-md-4">
+      <label for="inputCardName">Name on Card</label>
+      <input type="text" class="form-control" id="inputCardName" required/>
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputCardNumer">Credit Card Number</label>
+      <input type="text" class="form-control" id="inputCardNumber" required/>
+    </div>
+   </div>
+   <div class="form-row">
+  	<div class="form-group col-md-3">
+      <label for="inputExpiration">Expiration Date</label>
+      <input type="date" class="form-control" id="inputExpiration" required/>
+    </div>
+    <div class="form-group col-md-3">
+      <label for="inputCCV">CCV</label>
+      <input type="text" class="form-control" id="inputCCV" required/>
+    </div>
+   </div>
+
+  <button type="submit" class="btn btn-primary">Checkout</button>
+</form>
+
+</main>
+
+<!--Footer, still unsure what to put in-->
+<footer>
+@CookPal 2020
+</footer>
+
+
+
+
+<!--Script used for sidebar-->
+<script>
+function openNav() {
+var e = document.getElementById("sidebar");
+if (e.style.width == '260px')
+{e.style.width = '0px';}
+else
+{e.style.width='260px';}
+}
+function closeNav()
+{document.getElementById("sidebar").style.width="0";}
+</script>
+
+</body>
+
+</html>
